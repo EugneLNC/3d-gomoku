@@ -26,7 +26,15 @@
 
 ### Task 3: Publish and verify
 
-- [ ] Initialize the source repository and stage only `.gitignore`, `README.md`, `package.json`, `package-lock.json`, `index.html`, `tsconfig.json`, `tsconfig.app.json`, `tsconfig.node.json`, `vite.config.ts`, `src/` and this plan. Inspect the staged file list before committing.
-- [ ] Create public repository with `gh repo create EugneLNC/3d-gomoku --public --source . --remote origin --push`; compare local HEAD with `git ls-remote origin refs/heads/main`.
-- [ ] Commit only the website entry links and built game, push `main`, and compare local HEAD with its remote ref.
-- [ ] Check the GitHub Pages build for this commit, then verify the deployed homepage and game URL. Report any verification limit accurately.
+- [x] Initialize the source repository and stage only `.gitignore`, `README.md`, `package.json`, `package-lock.json`, `index.html`, `tsconfig.json`, `tsconfig.app.json`, `tsconfig.node.json`, `vite.config.ts`, `src/` and this plan. Inspect the staged file list before committing.
+- [x] Create public repository with `gh repo create EugneLNC/3d-gomoku --public --source . --remote origin --push`; compare local HEAD with `git ls-remote origin refs/heads/main`.
+- [x] Commit only the website entry links and built game, push `main`, and compare local HEAD with its remote ref.
+- [x] Check the GitHub Pages build for this commit, then verify the deployed homepage and game URL. Report any verification limit accurately.
+
+## Verification results
+
+- 28 tests passed; TypeScript and Vite production build passed.
+- Browser verified a local two-player move, three-player mode, and AI response without console errors.
+- Source and website commits matched their remote main refs.
+- Website commit 9ebf910bc3fd01f75d3b3e9c7b40914e8a02133d deployed successfully in GitHub Pages run 38535901360.
+- Public homepage and game HTML fetched successfully over HTTPS. Public browser navigation timed out, so deployed interaction was not independently retested.
