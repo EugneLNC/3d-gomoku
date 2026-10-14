@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.publish/
+.agents/
+.codex/
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+*.log
+.env
+.env.*
+!.env.example
+
+# Local files unrelated to the game
+wireguard-users/
+flash-raspberry-pi.cmd
+raspberry-pi-network-config.yaml
+rpi-cli-help.txt
+*.img
+*.img.xz
